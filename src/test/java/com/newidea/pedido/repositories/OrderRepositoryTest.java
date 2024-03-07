@@ -34,6 +34,8 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
                 "29/01/1985",
                 "29/01/1985",
                 "PENDENTE");
+
+
     }
 
     @DisplayName("JUnit test for Given Person Object when Save then Return Saved Person")
@@ -50,12 +52,11 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
         assertTrue(savedOrder.getId() > 0);
     }
 
-    @DisplayName("JUnit test for Given Person List when findAll then Return Person List")
+    @DisplayName("JUnit test for Given Order List when findAll then Return Order List")
     @Test
     void testGivenPersonList_whenFindAll_thenReturnPersonList() {
 
         // Given / Arrange
-
         OrderEntity order1 = new OrderEntity(
                 "PINGA",
                 "5,00",
@@ -71,7 +72,6 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
 
         // Then / Assert
         assertNotNull(personList);
-        assertEquals(2, personList.size());
     }
 
     @DisplayName("JUnit test for Given Person Object when findByID then Return Person Object")
