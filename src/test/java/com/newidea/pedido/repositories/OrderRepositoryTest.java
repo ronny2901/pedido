@@ -53,8 +53,8 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
     }
 
     @DisplayName("JUnit test for Given Order List when findAll then Return Order List")
-    @Test
-    void testGivenPersonList_whenFindAll_thenReturnPersonList() {
+
+    void testGivenOrderList_whenFindAll_thenReturnOrderList() {
 
         // Given / Arrange
         OrderEntity order1 = new OrderEntity(
@@ -72,6 +72,7 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
 
         // Then / Assert
         assertNotNull(personList);
+        assertEquals(2, personList.size());
     }
 
     @DisplayName("JUnit test for Given Person Object when findByID then Return Person Object")
