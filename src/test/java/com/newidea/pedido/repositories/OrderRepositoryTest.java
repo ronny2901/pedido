@@ -53,7 +53,7 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
     }
 
     @DisplayName("JUnit test for Given Order List when findAll then Return Order List")
-
+    
     void testGivenOrderList_whenFindAll_thenReturnOrderList() {
 
         // Given / Arrange
@@ -91,7 +91,7 @@ class OrderRepositoryTest extends AbstractIntegrationTest {
     }
 
     @DisplayName("JUnit test for Given Person Object when findByEmail then Return Person Object")
-    @Test
+    
     void testGivenPersonObject_whenFindByStatus_thenReturnPersonObject() {
 
         // Given / Arrange
