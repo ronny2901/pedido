@@ -41,8 +41,8 @@ services:
   pedido:
     image: ronny2901/pedido
     restart: always
-    build: ./pedido
-    working_dir: /pedido
+    build: ./
+    working_dir: /
     environment:
       - SPRING_DATASOURCE_URL=jdbc:postgresql://pg12:5432/postgres
       - SPRING_DATASOURCE_USERNAME=myuser
